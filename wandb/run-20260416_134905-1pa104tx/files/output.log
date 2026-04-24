@@ -1,0 +1,43 @@
+/home/amo/miniconda3/envs/maxvit/lib/python3.10/site-packages/torch/functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3595.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+model created
+Sequential(
+  (0): AdaptiveAvgPool2d(output_size=1)
+  (1): Flatten(start_dim=1, end_dim=-1)
+  (2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (3): Linear(in_features=512, out_features=512, bias=True)
+  (4): Tanh()
+  (5): Linear(in_features=512, out_features=1758, bias=True)
+)
+Traceback (most recent call last):
+  File "/home/amo/Projects/MaxVIT_Experiment/train_copy.py", line 102, in <module>
+    train_loss, train_accuracy = one_epoch_training(epoch)
+  File "/home/amo/Projects/MaxVIT_Experiment/train_copy.py", line 61, in one_epoch_training
+    outputs = maxVIT(images)
+  File "/home/amo/miniconda3/envs/maxvit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/amo/miniconda3/envs/maxvit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/amo/miniconda3/envs/maxvit/lib/python3.10/site-packages/torchvision/models/maxvit.py", line 708, in forward
+    x = self.stem(x)
+  File "/home/amo/miniconda3/envs/maxvit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/amo/miniconda3/envs/maxvit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/amo/miniconda3/envs/maxvit/lib/python3.10/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/home/amo/miniconda3/envs/maxvit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/amo/miniconda3/envs/maxvit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/amo/miniconda3/envs/maxvit/lib/python3.10/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/home/amo/miniconda3/envs/maxvit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/amo/miniconda3/envs/maxvit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/amo/miniconda3/envs/maxvit/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/amo/miniconda3/envs/maxvit/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+RuntimeError: Input type (torch.cuda.FloatTensor) and weight type (torch.FloatTensor) should be the same

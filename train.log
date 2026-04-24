@@ -1,0 +1,180 @@
+nohup: ignoring input
+/home/amo/Projects/MaxVIT_Experiment/dataloader.py:13: DtypeWarning: Columns (15,16) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.fishes = pd.read_csv(csv_file)
+tensor([0.9323, 0.9146, 0.8900])
+tensor([0.1745, 0.2119, 0.2638])
+/home/amo/Projects/MaxVIT_Experiment/dataloader.py:13: DtypeWarning: Columns (15,16) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.fishes = pd.read_csv(csv_file)
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home/amo/.netrc.
+wandb: Currently logged in as: amo4 (amo4-rhodes-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run 7rtgyv4r
+wandb: Tracking run with wandb version 0.26.0
+wandb: Run data is saved locally in /home/amo/Projects/MaxVIT_Experiment/wandb/run-20260416_140418-7rtgyv4r
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run vibrant-fire-2
+wandb: ⭐️ View project at https://wandb.ai/amo4-rhodes-university/FishVista_Project
+wandb: 🚀 View run at https://wandb.ai/amo4-rhodes-university/FishVista_Project/runs/7rtgyv4r
+/home/amo/miniconda3/envs/maxvit/lib/python3.10/site-packages/torch/functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3595.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+model created
+Sequential(
+  (0): AdaptiveAvgPool2d(output_size=1)
+  (1): Flatten(start_dim=1, end_dim=-1)
+  (2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (3): Linear(in_features=512, out_features=512, bias=True)
+  (4): Tanh()
+  (5): Linear(in_features=512, out_features=1758, bias=True)
+)
+Epoch:  0 / 150  Training loss:  7.0572  Train Accuracy:  0.0428  Validation loss:  6.9641 Validation Accuracy:  0.0556
+Epoch:  1 / 150  Training loss:  5.9045  Train Accuracy:  0.0956  Validation loss:  5.9166 Validation Accuracy:  0.0938
+Epoch:  2 / 150  Training loss:  4.8852  Train Accuracy:  0.1653  Validation loss:  5.1763 Validation Accuracy:  0.1751
+Epoch:  3 / 150  Training loss:  4.1207  Train Accuracy:  0.3024  Validation loss:  4.5522 Validation Accuracy:  0.2829
+Epoch:  4 / 150  Training loss:  3.4757  Train Accuracy:  0.4037  Validation loss:  4.0626 Validation Accuracy:  0.3493
+Epoch:  5 / 150  Training loss:  2.9978  Train Accuracy:  0.4765  Validation loss:  3.7201 Validation Accuracy:  0.4009
+Epoch:  6 / 150  Training loss:  2.6417  Train Accuracy:  0.5303  Validation loss:  3.4655 Validation Accuracy:  0.4285
+Epoch:  7 / 150  Training loss:  2.3559  Train Accuracy:  0.5756  Validation loss:  3.1736 Validation Accuracy:  0.4694
+Epoch:  8 / 150  Training loss:  2.1167  Train Accuracy:  0.611  Validation loss:  2.9523 Validation Accuracy:  0.4934
+Epoch:  9 / 150  Training loss:  1.9045  Train Accuracy:  0.6424  Validation loss:  2.7266 Validation Accuracy:  0.5299
+Epoch:  10 / 150  Training loss:  1.7145  Train Accuracy:  0.6725  Validation loss:  2.5621 Validation Accuracy:  0.5442
+Epoch:  11 / 150  Training loss:  1.5507  Train Accuracy:  0.6977  Validation loss:  2.4016 Validation Accuracy:  0.5653
+Epoch:  12 / 150  Training loss:  1.4054  Train Accuracy:  0.7216  Validation loss:  2.218 Validation Accuracy:  0.5921
+Epoch:  13 / 150  Training loss:  1.2735  Train Accuracy:  0.7446  Validation loss:  2.0615 Validation Accuracy:  0.6126
+Epoch:  14 / 150  Training loss:  1.1527  Train Accuracy:  0.7663  Validation loss:  1.9134 Validation Accuracy:  0.6342
+Epoch:  15 / 150  Training loss:  1.0431  Train Accuracy:  0.7846  Validation loss:  1.8045 Validation Accuracy:  0.6473
+Epoch:  16 / 150  Training loss:  0.941  Train Accuracy:  0.8026  Validation loss:  1.6864 Validation Accuracy:  0.6612
+Epoch:  17 / 150  Training loss:  0.8461  Train Accuracy:  0.8202  Validation loss:  1.6027 Validation Accuracy:  0.6756
+Epoch:  18 / 150  Training loss:  0.7706  Train Accuracy:  0.8368  Validation loss:  1.4944 Validation Accuracy:  0.6935
+Epoch:  19 / 150  Training loss:  0.6916  Train Accuracy:  0.8521  Validation loss:  1.4407 Validation Accuracy:  0.7005
+Epoch:  20 / 150  Training loss:  0.6197  Train Accuracy:  0.868  Validation loss:  1.3229 Validation Accuracy:  0.7298
+Epoch:  21 / 150  Training loss:  0.5528  Train Accuracy:  0.8839  Validation loss:  1.2532 Validation Accuracy:  0.7448
+Epoch:  22 / 150  Training loss:  0.4992  Train Accuracy:  0.8955  Validation loss:  1.216 Validation Accuracy:  0.7467
+Epoch:  23 / 150  Training loss:  0.4402  Train Accuracy:  0.9079  Validation loss:  1.1433 Validation Accuracy:  0.766
+Epoch:  24 / 150  Training loss:  0.3967  Train Accuracy:  0.9169  Validation loss:  1.1801 Validation Accuracy:  0.7535
+Epoch:  25 / 150  Training loss:  0.3555  Train Accuracy:  0.9282  Validation loss:  1.0478 Validation Accuracy:  0.7832
+Epoch:  26 / 150  Training loss:  0.318  Train Accuracy:  0.9354  Validation loss:  1.0625 Validation Accuracy:  0.7793
+Epoch:  27 / 150  Training loss:  0.2867  Train Accuracy:  0.9404  Validation loss:  1.0238 Validation Accuracy:  0.7851
+Epoch:  28 / 150  Training loss:  0.2553  Train Accuracy:  0.9464  Validation loss:  0.9994 Validation Accuracy:  0.7919
+Epoch:  29 / 150  Training loss:  0.2352  Train Accuracy:  0.9505  Validation loss:  1.0204 Validation Accuracy:  0.7832
+Epoch:  30 / 150  Training loss:  0.213  Train Accuracy:  0.9552  Validation loss:  1.0133 Validation Accuracy:  0.7871
+Epoch:  31 / 150  Training loss:  0.2028  Train Accuracy:  0.9549  Validation loss:  0.9511 Validation Accuracy:  0.7989
+Epoch:  32 / 150  Training loss:  0.1923  Train Accuracy:  0.9572  Validation loss:  1.0872 Validation Accuracy:  0.7718
+Epoch:  33 / 150  Training loss:  0.1813  Train Accuracy:  0.9586  Validation loss:  0.9732 Validation Accuracy:  0.7929
+Epoch:  34 / 150  Training loss:  0.1623  Train Accuracy:  0.9622  Validation loss:  0.9671 Validation Accuracy:  0.7964
+Epoch:  35 / 150  Training loss:  0.164  Train Accuracy:  0.9615  Validation loss:  0.962 Validation Accuracy:  0.7972
+Epoch:  36 / 150  Training loss:  0.1567  Train Accuracy:  0.9616  Validation loss:  1.0053 Validation Accuracy:  0.7917
+Epoch:  37 / 150  Training loss:  0.1474  Train Accuracy:  0.9637  Validation loss:  0.9634 Validation Accuracy:  0.8007
+Epoch:  38 / 150  Training loss:  0.1479  Train Accuracy:  0.9639  Validation loss:  1.0266 Validation Accuracy:  0.7907
+Epoch:  39 / 150  Training loss:  0.1413  Train Accuracy:  0.9646  Validation loss:  1.0783 Validation Accuracy:  0.7801
+Epoch:  40 / 150  Training loss:  0.1388  Train Accuracy:  0.9647  Validation loss:  0.9922 Validation Accuracy:  0.7978
+Epoch:  41 / 150  Training loss:  0.135  Train Accuracy:  0.9657  Validation loss:  0.9971 Validation Accuracy:  0.7953
+Epoch:  42 / 150  Training loss:  0.1298  Train Accuracy:  0.9668  Validation loss:  0.9969 Validation Accuracy:  0.7981
+Epoch:  43 / 150  Training loss:  0.1325  Train Accuracy:  0.9649  Validation loss:  1.0452 Validation Accuracy:  0.7907
+Epoch:  44 / 150  Training loss:  0.129  Train Accuracy:  0.9656  Validation loss:  1.0266 Validation Accuracy:  0.7958
+Epoch:  45 / 150  Training loss:  0.1346  Train Accuracy:  0.9636  Validation loss:  1.1025 Validation Accuracy:  0.7784
+Epoch:  46 / 150  Training loss:  0.1331  Train Accuracy:  0.9641  Validation loss:  1.0736 Validation Accuracy:  0.7836
+Epoch:  47 / 150  Training loss:  0.1264  Train Accuracy:  0.9663  Validation loss:  1.0553 Validation Accuracy:  0.7888
+Epoch:  48 / 150  Training loss:  0.1311  Train Accuracy:  0.9636  Validation loss:  1.0856 Validation Accuracy:  0.7849
+Epoch:  49 / 150  Training loss:  0.1268  Train Accuracy:  0.9649  Validation loss:  1.0259 Validation Accuracy:  0.7947
+Epoch:  50 / 150  Training loss:  0.1213  Train Accuracy:  0.9674  Validation loss:  1.0839 Validation Accuracy:  0.7879
+Epoch:  51 / 150  Training loss:  0.1179  Train Accuracy:  0.9675  Validation loss:  1.1846 Validation Accuracy:  0.7591
+Epoch:  52 / 150  Training loss:  0.1144  Train Accuracy:  0.9687  Validation loss:  1.0857 Validation Accuracy:  0.7823
+Epoch:  53 / 150  Training loss:  0.1055  Train Accuracy:  0.97  Validation loss:  1.0601 Validation Accuracy:  0.792
+Epoch:  54 / 150  Training loss:  0.1073  Train Accuracy:  0.9707  Validation loss:  1.1249 Validation Accuracy:  0.7842
+Epoch:  55 / 150  Training loss:  0.1064  Train Accuracy:  0.9706  Validation loss:  1.1007 Validation Accuracy:  0.7826
+Epoch:  56 / 150  Training loss:  0.1024  Train Accuracy:  0.9716  Validation loss:  1.0595 Validation Accuracy:  0.795
+Epoch:  57 / 150  Training loss:  0.0967  Train Accuracy:  0.9743  Validation loss:  1.1095 Validation Accuracy:  0.7871
+Epoch:  58 / 150  Training loss:  0.1043  Train Accuracy:  0.9713  Validation loss:  1.118 Validation Accuracy:  0.7843
+Epoch:  59 / 150  Training loss:  0.094  Train Accuracy:  0.9738  Validation loss:  1.0898 Validation Accuracy:  0.7842
+Epoch:  60 / 150  Training loss:  0.0956  Train Accuracy:  0.9731  Validation loss:  1.1658 Validation Accuracy:  0.7712
+Epoch:  61 / 150  Training loss:  0.0935  Train Accuracy:  0.974  Validation loss:  1.057 Validation Accuracy:  0.7955
+Epoch:  62 / 150  Training loss:  0.0846  Train Accuracy:  0.9768  Validation loss:  1.0522 Validation Accuracy:  0.7955
+Epoch:  63 / 150  Training loss:  0.0924  Train Accuracy:  0.9741  Validation loss:  1.0531 Validation Accuracy:  0.7983
+Epoch:  64 / 150  Training loss:  0.0816  Train Accuracy:  0.9783  Validation loss:  1.0857 Validation Accuracy:  0.7883
+Epoch:  65 / 150  Training loss:  0.0852  Train Accuracy:  0.9756  Validation loss:  1.0272 Validation Accuracy:  0.8042
+Epoch:  66 / 150  Training loss:  0.0804  Train Accuracy:  0.977  Validation loss:  1.0439 Validation Accuracy:  0.7989
+Epoch:  67 / 150  Training loss:  0.0759  Train Accuracy:  0.9792  Validation loss:  1.0717 Validation Accuracy:  0.7966
+Epoch:  68 / 150  Training loss:  0.0774  Train Accuracy:  0.9785  Validation loss:  1.0876 Validation Accuracy:  0.7986
+Epoch:  69 / 150  Training loss:  0.072  Train Accuracy:  0.9808  Validation loss:  1.0572 Validation Accuracy:  0.8023
+Epoch:  70 / 150  Training loss:  0.0725  Train Accuracy:  0.9801  Validation loss:  1.0869 Validation Accuracy:  0.791
+Epoch:  71 / 150  Training loss:  0.0777  Train Accuracy:  0.9784  Validation loss:  1.0559 Validation Accuracy:  0.7947
+Epoch:  72 / 150  Training loss:  0.0637  Train Accuracy:  0.9829  Validation loss:  1.0804 Validation Accuracy:  0.7989
+Epoch:  73 / 150  Training loss:  0.0687  Train Accuracy:  0.9812  Validation loss:  1.0817 Validation Accuracy:  0.7922
+Epoch:  74 / 150  Training loss:  0.0717  Train Accuracy:  0.9805  Validation loss:  1.0235 Validation Accuracy:  0.8045
+Epoch:  75 / 150  Training loss:  0.0711  Train Accuracy:  0.9801  Validation loss:  1.0605 Validation Accuracy:  0.8041
+Epoch:  76 / 150  Training loss:  0.059  Train Accuracy:  0.984  Validation loss:  1.0234 Validation Accuracy:  0.8041
+Epoch:  77 / 150  Training loss:  0.0551  Train Accuracy:  0.9843  Validation loss:  1.067 Validation Accuracy:  0.801
+Epoch:  78 / 150  Training loss:  0.0607  Train Accuracy:  0.9836  Validation loss:  1.0797 Validation Accuracy:  0.7994
+Epoch:  79 / 150  Training loss:  0.0608  Train Accuracy:  0.9833  Validation loss:  1.1148 Validation Accuracy:  0.7938
+Epoch:  80 / 150  Training loss:  0.0553  Train Accuracy:  0.9846  Validation loss:  1.0494 Validation Accuracy:  0.806
+Epoch:  81 / 150  Training loss:  0.051  Train Accuracy:  0.9863  Validation loss:  1.0811 Validation Accuracy:  0.8035
+Epoch:  82 / 150  Training loss:  0.0567  Train Accuracy:  0.9848  Validation loss:  1.0934 Validation Accuracy:  0.8
+Epoch:  83 / 150  Training loss:  0.0435  Train Accuracy:  0.9887  Validation loss:  1.0611 Validation Accuracy:  0.8007
+Epoch:  84 / 150  Training loss:  0.0523  Train Accuracy:  0.9852  Validation loss:  1.0709 Validation Accuracy:  0.805
+Epoch:  85 / 150  Training loss:  0.051  Train Accuracy:  0.9864  Validation loss:  1.048 Validation Accuracy:  0.8073
+Epoch:  86 / 150  Training loss:  0.0424  Train Accuracy:  0.989  Validation loss:  1.1483 Validation Accuracy:  0.7907
+Epoch:  87 / 150  Training loss:  0.0495  Train Accuracy:  0.9868  Validation loss:  1.0336 Validation Accuracy:  0.8088
+Epoch:  88 / 150  Training loss:  0.0405  Train Accuracy:  0.9895  Validation loss:  1.0394 Validation Accuracy:  0.8085
+Epoch:  89 / 150  Training loss:  0.0437  Train Accuracy:  0.9885  Validation loss:  1.046 Validation Accuracy:  0.8068
+Epoch:  90 / 150  Training loss:  0.0393  Train Accuracy:  0.9896  Validation loss:  1.087 Validation Accuracy:  0.7994
+Epoch:  91 / 150  Training loss:  0.0408  Train Accuracy:  0.9888  Validation loss:  1.045 Validation Accuracy:  0.8112
+Epoch:  92 / 150  Training loss:  0.034  Train Accuracy:  0.9908  Validation loss:  1.0243 Validation Accuracy:  0.8175
+Epoch:  93 / 150  Training loss:  0.0349  Train Accuracy:  0.9909  Validation loss:  1.0285 Validation Accuracy:  0.8155
+Epoch:  94 / 150  Training loss:  0.0398  Train Accuracy:  0.9895  Validation loss:  1.0509 Validation Accuracy:  0.8121
+Epoch:  95 / 150  Training loss:  0.031  Train Accuracy:  0.9918  Validation loss:  1.0487 Validation Accuracy:  0.8068
+Epoch:  96 / 150  Training loss:  0.0319  Train Accuracy:  0.9919  Validation loss:  1.0564 Validation Accuracy:  0.8118
+Epoch:  97 / 150  Training loss:  0.0292  Train Accuracy:  0.9927  Validation loss:  1.0302 Validation Accuracy:  0.8178
+Epoch:  98 / 150  Training loss:  0.0261  Train Accuracy:  0.9933  Validation loss:  1.0218 Validation Accuracy:  0.8208
+Epoch:  99 / 150  Training loss:  0.0268  Train Accuracy:  0.9929  Validation loss:  0.994 Validation Accuracy:  0.8194
+Epoch:  100 / 150  Training loss:  0.0272  Train Accuracy:  0.993  Validation loss:  1.0424 Validation Accuracy:  0.8155
+Epoch:  101 / 150  Training loss:  0.0195  Train Accuracy:  0.9951  Validation loss:  1.0231 Validation Accuracy:  0.8159
+Epoch:  102 / 150  Training loss:  0.0267  Train Accuracy:  0.9928  Validation loss:  1.0336 Validation Accuracy:  0.8141
+Epoch:  103 / 150  Training loss:  0.0265  Train Accuracy:  0.993  Validation loss:  1.0336 Validation Accuracy:  0.811
+Epoch:  104 / 150  Training loss:  0.0204  Train Accuracy:  0.9947  Validation loss:  1.0084 Validation Accuracy:  0.8196
+Epoch:  105 / 150  Training loss:  0.018  Train Accuracy:  0.9957  Validation loss:  0.9948 Validation Accuracy:  0.8261
+Epoch:  106 / 150  Training loss:  0.0209  Train Accuracy:  0.9947  Validation loss:  1.0082 Validation Accuracy:  0.8227
+Epoch:  107 / 150  Training loss:  0.0211  Train Accuracy:  0.9946  Validation loss:  1.0782 Validation Accuracy:  0.8131
+Epoch:  108 / 150  Training loss:  0.0136  Train Accuracy:  0.9965  Validation loss:  1.0658 Validation Accuracy:  0.8166
+Epoch:  109 / 150  Training loss:  0.0147  Train Accuracy:  0.9963  Validation loss:  0.9967 Validation Accuracy:  0.8233
+Epoch:  110 / 150  Training loss:  0.0127  Train Accuracy:  0.9971  Validation loss:  1.0099 Validation Accuracy:  0.8214
+Epoch:  111 / 150  Training loss:  0.013  Train Accuracy:  0.9969  Validation loss:  1.0158 Validation Accuracy:  0.8206
+Epoch:  112 / 150  Training loss:  0.0145  Train Accuracy:  0.9963  Validation loss:  1.0189 Validation Accuracy:  0.8215
+Epoch:  113 / 150  Training loss:  0.0111  Train Accuracy:  0.9976  Validation loss:  1.0066 Validation Accuracy:  0.8255
+Epoch:  114 / 150  Training loss:  0.0119  Train Accuracy:  0.9973  Validation loss:  0.9833 Validation Accuracy:  0.8295
+Epoch:  115 / 150  Training loss:  0.0099  Train Accuracy:  0.9978  Validation loss:  0.9827 Validation Accuracy:  0.8327
+Epoch:  116 / 150  Training loss:  0.0095  Train Accuracy:  0.9979  Validation loss:  0.9884 Validation Accuracy:  0.8281
+Epoch:  117 / 150  Training loss:  0.008  Train Accuracy:  0.9983  Validation loss:  0.9891 Validation Accuracy:  0.8318
+Epoch:  118 / 150  Training loss:  0.0075  Train Accuracy:  0.9982  Validation loss:  1.0045 Validation Accuracy:  0.8242
+Epoch:  119 / 150  Training loss:  0.01  Train Accuracy:  0.9976  Validation loss:  0.9822 Validation Accuracy:  0.8314
+Epoch:  120 / 150  Training loss:  0.0084  Train Accuracy:  0.9982  Validation loss:  0.9896 Validation Accuracy:  0.834
+Epoch:  121 / 150  Training loss:  0.0059  Train Accuracy:  0.9987  Validation loss:  0.97 Validation Accuracy:  0.8329
+Epoch:  122 / 150  Training loss:  0.0053  Train Accuracy:  0.9989  Validation loss:  1.0072 Validation Accuracy:  0.8289
+Epoch:  123 / 150  Training loss:  0.0049  Train Accuracy:  0.9989  Validation loss:  1.0072 Validation Accuracy:  0.8296
+Epoch:  124 / 150  Training loss:  0.0055  Train Accuracy:  0.999  Validation loss:  1.0137 Validation Accuracy:  0.8289
+Epoch:  125 / 150  Training loss:  0.0042  Train Accuracy:  0.9991  Validation loss:  0.9813 Validation Accuracy:  0.8386
+Epoch:  126 / 150  Training loss:  0.0048  Train Accuracy:  0.9989  Validation loss:  0.992 Validation Accuracy:  0.8345
+Epoch:  127 / 150  Training loss:  0.0048  Train Accuracy:  0.999  Validation loss:  0.976 Validation Accuracy:  0.8366
+Epoch:  128 / 150  Training loss:  0.0029  Train Accuracy:  0.9994  Validation loss:  0.9764 Validation Accuracy:  0.8374
+Epoch:  129 / 150  Training loss:  0.0035  Train Accuracy:  0.9994  Validation loss:  0.9742 Validation Accuracy:  0.8402
+Epoch:  130 / 150  Training loss:  0.0027  Train Accuracy:  0.9996  Validation loss:  0.9784 Validation Accuracy:  0.8389
+Epoch:  131 / 150  Training loss:  0.0032  Train Accuracy:  0.9995  Validation loss:  0.9763 Validation Accuracy:  0.8364
+Epoch:  132 / 150  Training loss:  0.0027  Train Accuracy:  0.9995  Validation loss:  0.9642 Validation Accuracy:  0.8377
+Epoch:  133 / 150  Training loss:  0.0027  Train Accuracy:  0.9996  Validation loss:  0.9615 Validation Accuracy:  0.8419
+Epoch:  134 / 150  Training loss:  0.0023  Train Accuracy:  0.9997  Validation loss:  0.9601 Validation Accuracy:  0.8404
+Epoch:  135 / 150  Training loss:  0.0026  Train Accuracy:  0.9996  Validation loss:  0.9621 Validation Accuracy:  0.8404
+Epoch:  136 / 150  Training loss:  0.0019  Train Accuracy:  0.9997  Validation loss:  0.9681 Validation Accuracy:  0.8407
+Epoch:  137 / 150  Training loss:  0.002  Train Accuracy:  0.9997  Validation loss:  0.9632 Validation Accuracy:  0.8425
+Epoch:  138 / 150  Training loss:  0.0018  Train Accuracy:  0.9997  Validation loss:  0.9686 Validation Accuracy:  0.8411
+Epoch:  139 / 150  Training loss:  0.0018  Train Accuracy:  0.9997  Validation loss:  0.9674 Validation Accuracy:  0.8411
+Epoch:  140 / 150  Training loss:  0.0016  Train Accuracy:  0.9998  Validation loss:  0.9661 Validation Accuracy:  0.842
+Epoch:  141 / 150  Training loss:  0.0017  Train Accuracy:  0.9997  Validation loss:  0.9658 Validation Accuracy:  0.8429
+Epoch:  142 / 150  Training loss:  0.0017  Train Accuracy:  0.9998  Validation loss:  0.9614 Validation Accuracy:  0.8429
+Epoch:  143 / 150  Training loss:  0.0015  Train Accuracy:  0.9999  Validation loss:  0.9604 Validation Accuracy:  0.8438
+Epoch:  144 / 150  Training loss:  0.0012  Train Accuracy:  0.9999  Validation loss:  0.9624 Validation Accuracy:  0.843
+Epoch:  145 / 150  Training loss:  0.0013  Train Accuracy:  0.9999  Validation loss:  0.9637 Validation Accuracy:  0.8432
+Epoch:  146 / 150  Training loss:  0.0012  Train Accuracy:  0.9999  Validation loss:  0.9625 Validation Accuracy:  0.8432
+Epoch:  147 / 150  Training loss:  0.0014  Train Accuracy:  0.9998  Validation loss:  0.9631 Validation Accuracy:  0.8433
+Epoch:  148 / 150  Training loss:  0.0013  Train Accuracy:  0.9998  Validation loss:  0.9631 Validation Accuracy:  0.8435
+Epoch:  149 / 150  Training loss:  0.0013  Train Accuracy:  0.9998  Validation loss:  0.9633 Validation Accuracy:  0.843
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33mvibrant-fire-2[0m at: [34mhttps://wandb.ai/amo4-rhodes-university/FishVista_Project/runs/7rtgyv4r[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20260416_140418-7rtgyv4r/logs[0m

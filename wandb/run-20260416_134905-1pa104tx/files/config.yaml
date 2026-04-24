@@ -1,0 +1,76 @@
+_wandb:
+    value:
+        cli_version: 0.26.0
+        e:
+            2aethnk8rqys86nmrpkq6j815il8ifir:
+                args:
+                    - --lr
+                    - "3e-4"
+                    - --optimizer
+                    - AdamW
+                    - --seed
+                    - "9229"
+                    - --name
+                    - fish_vista_run1
+                    - --wandb
+                codePath: train_copy.py
+                codePathLocal: train_copy.py
+                cpu_count: 16
+                cpu_count_logical: 24
+                cudaVersion: "12.3"
+                disk:
+                    /:
+                        total: "58470010880"
+                        used: "27068555264"
+                email: g22a7399@campus.ru.ac.za
+                executable: /home/amo/miniconda3/envs/maxvit/bin/python
+                gpu: NVIDIA RTX A6000
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "51527024640"
+                      name: NVIDIA RTX A6000
+                      uuid: GPU-84c5b1bc-897f-8e2a-9795-088e20599972
+                host: ml5-Precision-3660
+                memory:
+                    total: "134735986688"
+                os: Linux-6.5.0-28-generic-x86_64-with-glibc2.35
+                program: /home/amo/Projects/MaxVIT_Experiment/train_copy.py
+                python: CPython 3.10.20
+                root: /home/amo/Projects/MaxVIT_Experiment
+                startedAt: "2026-04-16T11:49:05.896778Z"
+                writerId: 2aethnk8rqys86nmrpkq6j815il8ifir
+        m: []
+        python_version: 3.10.20
+        t:
+            "1":
+                - 1
+                - 41
+            "2":
+                - 1
+                - 41
+            "3":
+                - 16
+            "4": 3.10.20
+            "5": 0.26.0
+            "12": 0.26.0
+            "13": linux-x86_64
+dataload_type:
+    value: FishVista_normal
+dataset:
+    value: fishvista
+decay:
+    value: 0.1
+epochs:
+    value: 150
+learning_rate:
+    value: 0.0003
+lr_warmup:
+    value: 50
+model:
+    value: maxvit_t
+optimizer:
+    value: AdamW
+seed:
+    value: 9229
