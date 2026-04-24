@@ -31,8 +31,8 @@ FishVista/
 │
 ├── config.py                #contains Experiment configurations (e.g, learning rate) logged through the CLI
 ├── dataloader.py            #contains classes and helpers for loading the dataset
-├── extract_embeddings.ipynb  #once the model is trained we extract and visualize embeddings for selected species 
+├── extract_embeddings.ipynb  #once the model is trained, we extract and visualize embeddings for selected species 
 ├── tea_debug.log
-├── train.log                 #log train results (e.g validation loss) per epoch and errors if any occur
-├── train.py                  #contains the main training loop (this is where everything comes together almost all defined classes are imported into the training loop)
-└── utils.py                  # contains utility functions (e.g calculate std and mean for batchnorm)
+├── train.log                 #log train results (e.g., validation loss) per epoch and errors if any occur
+├── train.py                  #contains the main training loop (this is where everything comes together, almost all defined classes are imported into the training loop)
+└── utils.py                  # contains utility functions (e.g., calculate std and mean for normalization)
