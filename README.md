@@ -25,7 +25,7 @@ FishVista/
 │   ├── val/
 │   └── test/
 │
-├── Models/
+├── Models/                  # Currently only contains maxVIT model initialization
 │
 ├── wandb/                   #results logged on weights&biases (wandb)
 │
